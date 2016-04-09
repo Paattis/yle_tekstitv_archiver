@@ -8,8 +8,10 @@ import random
 
 firstPage = 100
 lastPage = 899
-maxSubPages = 9
-subPageNums = ["0"+str(i) for i in range(1,maxSubPages+1)]
+maxSubPages = 30
+
+subPageNums = list(map(lambda x: x if int(x) < 9 else x[1:],["0"+str(i) for i in range(1,maxSubPages+1)]))
+
 print(subPageNums)
 date = datetime.datetime.today().strftime("%d_%m_%Y")
 basePath ="./archived_pages/%s" % date
@@ -28,7 +30,6 @@ def getPicture(page,savePath,subPage="01",):
 	#page or subpage doesn't exist
 	if r.status_code != 200:
 		return False
-
 
 	
 	#create the path	
