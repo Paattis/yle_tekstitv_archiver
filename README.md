@@ -1,5 +1,5 @@
 # yle_tekstitv_archiver
-a simple python script (3.4, haven't tested on 2.7, probably won't work) that allows you to download all the YLE (Finland's national public-broadcasting company) teletext pages for archival purposes.
+a simple python script (~~3.4, haven't tested on 2.7, probably won't work~~ works) that allows you to download all the YLE (Finland's national public-broadcasting company) teletext pages for archival purposes.
 
 #instructions
 -download the repository</br>
