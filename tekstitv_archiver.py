@@ -56,7 +56,7 @@ subPageNums = list(map(lambda x: x if int(x) < 10 else x[1:],["0"+str(i) for i i
 date = datetime.datetime.today().strftime("%d_%m_%Y")
 basePath ="./archived_pages/%s" % date
 
-def getPicture(page,savePath,subPage="01",):
+def getPicture(page,savePath,subPage="01"):
 	userAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
 	headers = {"User-Agent":userAgent}
 
